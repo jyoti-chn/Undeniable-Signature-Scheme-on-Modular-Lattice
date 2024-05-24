@@ -1,7 +1,7 @@
-# Undeniable-Signature-Scheme-on-Module-Lattice
+# Undeniable-Signature-Scheme-on-Modular-Lattice
 
 ## Overview
-This project presents an undeniable signature scheme based on modular lattices, aiming to enhance security and align with proposed cryptographic standards. The GPV (Gentry, Peikert, and Vaikuntanathan) signature scheme serves as the base, with modifications to adapt it to modular lattices.
+This project presents an undeniable signature scheme based on modular lattices to enhance security and align with proposed post-quantum cryptographic standards. The GPV (Gentry, Peikert, and Vaikuntanathan) signature scheme serves as the base, with modifications to adapt it to modular lattices.
 
 ## Reasons for Modification
 1. **Enhanced Security:** Shifting to modular lattices for improved security.
@@ -9,7 +9,7 @@ This project presents an undeniable signature scheme based on modular lattices, 
 3. **Research Development:** Embracing algorithmic advances suited for modular lattices.
 
 ## Implementation Plan
-Developed new algorithms for key generation, signing, and verification tailored for modular lattices.
+Developed new key generation, signing, and verification functions tailored for modular lattices.
 
 ## Key Algorithms
 
