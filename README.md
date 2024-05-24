@@ -33,8 +33,7 @@ Interactive communication between Signer (S) and Verifier (V).
 
 ## Experimental Setup
 Utilized two cryptographically secure collision-resistant hash functions:
-- h: {0, 1}^ℤ → ℝ_𝑞^𝑙
-- h1: {0, 1}𝑍 → ℝ_𝑞^(𝑙×𝑘)
+
 Two variants for the modular hash function:
 - Hash_com: To hash a random seed
 - Hash_com_message: To hash a message concatenated with a random seed
@@ -45,7 +44,7 @@ Executes MLTrapGen algorithm to obtain a pair (A, T).
 
 ## Signature Generation
 Produces a signature σ on the message m.
-- Outputs the signature σ = ("σ" _1, "σ" _2,"σ" _3) for the message m.
+- Outputs the signature σ for the message m.
 
 ## Verification
 
