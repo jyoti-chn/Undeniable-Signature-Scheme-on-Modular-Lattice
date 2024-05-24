@@ -49,30 +49,7 @@ Produces a signature σ on the message m.
 
 ## Verification
 
-1. **Verification of σ2:**
-   - Check if ||σ2|| ≤ tχ√(k×n).
-   - Verify if Aσ2 ≡ σ1 mod q.
-
 2. **Confirmation/Disavowal Protocol:**
-   This protocol operates between the signer and verifier as follows:
-   - The signer randomly selects e from ℝ^k and permutation φ ∈ [k].
-   - Computes commitments:
-     - Commitment 1: ℎ(φ||(L + M)e mod q)
-     - Commitment 2: ℎ(φ(e))
-     - Commitment 3: ℎ(φ(v + e))
-   - The verifier challenges with cᵣ ∈ {0, 1, 2}.
-   - Based on cᵣ:
-     - If cᵣ = 0, the signer responds with φ(v) and φ(e).
-     - If cᵣ = 1, it responds with φ and v + e.
-     - If cᵣ = 2, it responds with φ and e.
-   - The verifier checks:
-     - For cᵣ = 0: Correctness of commitments 2 and 3.
-     - For cᵣ = 1: Correctness of commitment 3.
-     - For cᵣ = 0 (Confirmation) or cᵣ = 1 (Disavowal):
-       - If Commitment 1 = ℎ(φ||(L + M)(v + e) - H - σ3 mod q), it's Confirmation.
-       - If Commitment 1 ≠ ℎ(φ||(L + M)(v + e) - H - σ3 mod q), it's Disavowal.
-     - For cᵣ = 2: Validity of commitments 1 and 2.
-   
-3. **Verification Outcome:**
-   If all verifications pass successfully, the verifier outputs 1; otherwise, it outputs 0.
+   This protocol operates between the signer and verifier 
+   - If all verifications pass successfully, the verifier outputs 1; otherwise, it outputs 0.
 
